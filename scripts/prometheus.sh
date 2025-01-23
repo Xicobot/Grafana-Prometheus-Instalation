@@ -1,25 +1,19 @@
 #!/bin/bash
 
-# Script to install Grafana locally
+# Script para instalar Prometheus localmente
 
-# Update system repositories
+# Actualizar los repositorios del sistema
 sudo apt update
 sudo apt upgrade -y
 
-# Add Grafana repository
-sudo apt install -y software-properties-common
-wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
-echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
+# Instalar Prometheus
+sudo apt install prometheus -y
 
-# Install Grafana
-sudo apt update
-sudo apt install grafana -y
+# Habilitar e iniciar el servicio de Prometheus
+sudo systemctl enable prometheus
+sudo systemctl start prometheus
 
-# Enable and start Grafana service
-sudo systemctl enable grafana-server
-sudo systemctl start grafana-server
+# Verificar la instalación
+sudo systemctl status prometheus
 
-# Verify installation
-sudo systemctl status grafana-server
-
-echo "Grafana installation completed! Access it at http://localhost:3000"
+echo "¡Instalación de Prometheus completada! Accede a la interfaz web en http://localhost:9090"
