@@ -10,8 +10,8 @@ apt upgrade -y
 apt install -y apt-transport-https 
 apt install -y software-properties-common
 apt install -y wget
-wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
-echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
+wget -q -O - https://packages.grafana.com/gpg.key | apt-key add -
+echo "deb https://packages.grafana.com/oss/deb stable main" | tee /etc/apt/sources.list.d/grafana.list
 
 # Install Grafana
 apt update
