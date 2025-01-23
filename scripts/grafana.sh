@@ -3,23 +3,23 @@
 # Script to install Grafana locally
 
 # Update system repositories
-sudo apt update
-sudo apt upgrade -y
+apt update
+apt upgrade -y
 
 # Add Grafana repository
-sudo apt install -y software-properties-common
+apt install -y software-properties-common wget
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
 
 # Install Grafana
-sudo apt update
-sudo apt install grafana -y
+apt update
+apt install grafana -y
 
 # Enable and start Grafana service
-sudo systemctl enable grafana-server
-sudo systemctl start grafana-server
+systemctl enable grafana-server
+systemctl start grafana-server
 
 # Verify installation
-sudo systemctl status grafana-server
+systemctl status grafana-server
 
 echo "Grafana installation completed! Access it at http://localhost:3000"
