@@ -17,8 +17,8 @@ This document describes how to install and configure Prometheus and Grafana on a
 1. **Update system repositories**:
 
    ```bash
-   sudo apt update
-   sudo apt upgrade -y
+   apt update
+   apt upgrade -y
    ```
 
 2. **Install Prometheus**:
@@ -26,7 +26,7 @@ This document describes how to install and configure Prometheus and Grafana on a
    Run the following command to install Prometheus from the official repositories:
 
    ```bash
-   sudo apt install prometheus -y
+   apt install prometheus -y
    ```
 
 3. **Verify Prometheus status**:
@@ -34,13 +34,13 @@ This document describes how to install and configure Prometheus and Grafana on a
    Ensure the service is active and running:
 
    ```bash
-   sudo systemctl status prometheus
+   systemctl status prometheus
    ```
 
    If it is not active, you can start it with:
 
    ```bash
-   sudo systemctl start prometheus
+   systemctl start prometheus
    ```
 
 4. **Enable auto-start**:
@@ -60,7 +60,7 @@ This document describes how to install and configure Prometheus and Grafana on a
    You can edit it to add custom monitoring targets:
 
    ```bash
-   sudo nano /etc/prometheus/prometheus.yml
+   nano /etc/prometheus/prometheus.yml
    ```
 
 6. **Access Prometheus web interface**:
@@ -80,28 +80,28 @@ This document describes how to install and configure Prometheus and Grafana on a
    Import the GPG key and add the official repository:
 
    ```bash
-   sudo apt install -y software-properties-common
-   wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
-   echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
+   apt install -y software-properties-common
+   wget -q -O - https://packages.grafana.com/gpg.key | apt-key add -
+   echo "deb https://packages.grafana.com/oss/deb stable main" | tee /etc/apt/sources.list.d/grafana.list
    ```
 
 2. **Update repositories and install Grafana**:
 
    ```bash
-   sudo apt update
-   sudo apt install grafana -y
+   apt update
+   apt install grafana -y
    ```
 
 3. **Start Grafana service**:
 
    ```bash
-   sudo systemctl start grafana-server
+   systemctl start grafana-server
    ```
 
 4. **Enable auto-start**:
 
    ```bash
-   sudo systemctl enable grafana-server
+   systemctl enable grafana-server
    ```
 
 5. **Access Grafana web interface**:
