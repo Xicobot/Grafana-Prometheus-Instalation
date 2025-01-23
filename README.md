@@ -141,6 +141,8 @@ This document describes how to install and configure Prometheus and Grafana on a
 1. Go to **Create > Dashboard**.
 2. Add a new panel and select metrics from Prometheus.
 3. Customize your graphs as needed.
+4. The code for the Grafana dashboard, which extracts the metrics, is as follows:1860
+
 
 ---
 
