@@ -1,4 +1,4 @@
-# Guide to Install and Use Apache Exporter with `apt install`
+# Guide to Install and Use Apache Exporter
 
 ## **1. Installing Apache and Apache Exporter**
 
