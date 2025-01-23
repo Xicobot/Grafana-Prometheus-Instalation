@@ -145,7 +145,7 @@ This document describes how to install and configure Prometheus and Grafana on a
 ---
 
 ## Additional Notes
-- **Scripts**: Also, i've created a script to automatice this process, check it out [here!](/scripts) (You must be as super user)
+- **Scripts**: Also, i've created a script to automatice this process, check it out [here!](/scripts) (You must be with administrative privileges.)
 - **Security**: Configure firewalls and authentication to secure your services.
 - **Official Documentation**:
   - [Prometheus](https://prometheus.io/docs/)
