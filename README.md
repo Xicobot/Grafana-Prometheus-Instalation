@@ -1,7 +1,5 @@
 # Grafana-Prometheus-Instalation
 
-# Installation of Prometheus and Grafana
-
 This document describes how to install and configure Prometheus and Grafana on a Debian/Ubuntu-based system.
 
 ## Prerequisites
