@@ -39,7 +39,7 @@ Install the `apache-exporter` package from the available repositories:
    ```
 
 2. Configure the Apache status file:
-   Edit the main Apache configuration file or your virtual host configuration file (default: `/etc/apache2/sites-available/000-default.conf`):
+   Edit the main Apache configuration file or your virtual host configuration file (default: `/etc/apache2/sites-available/000-default.conf`)  or configure it in (`/etc/apache/mods-aviable/status.conf`):
    ```bash
    nano /etc/apache2/sites-available/000-default.conf
    ```
@@ -76,7 +76,7 @@ Install the `apache-exporter` package from the available repositories:
    curl http://localhost:9117/metrics
    ```
 
-3. If additional parameters need to be configured, you can edit the service file at `/etc/default/prometheus-apache-exporter` (if it exists) or configure it directly in `/etc/apache/mods-aviable/status.conf`.
+3. If additional parameters need to be configured, you can edit the service file at `/etc/default/prometheus-apache-exporter` (if it exists) or configure it directly.
 
 ![likethis](/img/apache2.jpeg)
 
