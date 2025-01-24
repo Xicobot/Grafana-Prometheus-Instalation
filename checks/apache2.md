@@ -76,7 +76,7 @@ Install the `apache-exporter` package from the available repositories:
    curl http://localhost:9117/metrics
    ```
 
-3. If additional parameters need to be configured, you can edit the service file at `/etc/default/prometheus-apache-exporter` (if it exists) or configure it directly.
+3. If additional parameters need to be configured, you can edit the service file at `/etc/default/prometheus-apache-exporter` (if it exists) or configure it directly in `/etc/apache/mods-aviable/status.conf`.
 
 ![likethis](/img/apache2.jpeg)
 
