@@ -139,4 +139,7 @@ Look for metrics such as:
 
 ---
 
+## **6 Dashboard ID **
+3894
+
 With this, you will have installed Apache Exporter, configured Apache to expose metrics, and generated activity spikes to visualize them. You can integrate these metrics into tools like Prometheus or Grafana for better monitoring and visibility.
