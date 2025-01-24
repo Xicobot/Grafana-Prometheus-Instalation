@@ -78,6 +78,8 @@ Install the `apache-exporter` package from the available repositories:
 
 3. If additional parameters need to be configured, you can edit the service file at `/etc/default/prometheus-apache-exporter` (if it exists) or configure it directly.
 
+![likethis](/img/apache2.jpeg)
+
 ---
 
 ## **4. Stress Testing Apache to Generate Metric Peaks**
