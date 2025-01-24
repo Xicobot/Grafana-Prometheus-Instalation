@@ -80,6 +80,9 @@ Install the `apache-exporter` package from the available repositories:
 
 ![likethis](/img/apache2.jpeg)
 
+   ```bash
+FLAGS="--scrape_uri=http://localhost/server-status?auto"
+```
 ---
 
 ## **4. Stress Testing Apache to Generate Metric Peaks**
