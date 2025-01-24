@@ -83,6 +83,11 @@ Install the `apache-exporter` package from the available repositories:
    ```bash
 FLAGS="--scrape_uri=http://localhost/server-status?auto"
 ```
+
+4. We need to edit the prometheus.yml to look like this.
+
+![yml](/img/prometheus.png)
+
 ---
 
 ## **4. Stress Testing Apache to Generate Metric Peaks**
