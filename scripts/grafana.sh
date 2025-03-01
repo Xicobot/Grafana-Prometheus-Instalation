@@ -22,5 +22,5 @@ systemctl enable grafana-server
 systemctl start grafana-server
 
 # Verify installation
-systemctl status grafana-server
+# systemctl status grafana-server
 echo "Grafana installation completed! Access it at http://localhost:3000"
